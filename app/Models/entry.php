@@ -9,6 +9,6 @@ class entry extends Model
 {
     use HasFactory;
    protected $table = "addentry";
-   protected $fillable = ['name','email','password'];
+   protected $fillable = ['name','email','password','files'];
 
 }

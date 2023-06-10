@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
      crossorigin="anonymous">
+     <link rel="icon" href="{{ asset("favicon.ico") }}">
     <title>Display</title>
 </head>
 <body><br>
@@ -33,12 +34,12 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ( $customers as $customer)
+                @foreach ( $data as $customer)
                     
                 <tr>
-                    <td scope="row">{{ $customer->id }}</td>
-                    <td>{{  $customer->name}}</td>
-                    <td>{{ $customer->email }}</td>
+                    <td scope="row">{{ $customer['id'] }}</td>
+                    <td>{{  $customer['name']}}</td>
+                    <td>{{ $customer['email'] }}</td>
                     {{-- <td>{{ $customer->password }}</td> --}}
                     <td>
                         <a href="{{ url('/delete')}}/{{ $customer->id }}"><button class="btn btn-danger">Delete</button></a>

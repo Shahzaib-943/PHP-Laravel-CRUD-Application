@@ -27,10 +27,10 @@
             <br>
             <br>
             <div class="">
-                <a class="badge badge-success" href="{{ url('/form') }}"><button  type="button" class="btn btn-primary">Add New Data</button></a>
-                <a class="badge badge-success" href="{{ url('/display') }}"><button type="button" class="btn btn-success">Display Data</button></a>
-                <a class="badge badge-success" href="{{ url('/display') }}"><button type="button" class="btn btn-warning">Edit Data</button></a>
-                <a class="badge badge-success" href="{{ url('/apimenu') }}"><button type="button" class="btn btn-info">Show API Data</button></a>
+                <a class="badge badge-success" href="{{ url('login') }}"><button  type="button" class="btn btn-primary">Log In</button></a>
+                <a class="badge badge-success" href="{{ url('display') }}"><button type="button" class="btn btn-success">Register</button></a>
+                {{-- <a class="badge badge-success" href="{{ url('/display') }}"><button type="button" class="btn btn-warning">Edit Data</button></a>
+                <a class="badge badge-success" href="{{ url('/apimenu') }}"><button type="button" class="btn btn-info">Show API Data</button></a> --}}
 
                 {{-- <button type="button" class="btn btn-warning"><a href="{{ url('/display') }}">Update Dat</a>a</button> --}}
             </div>

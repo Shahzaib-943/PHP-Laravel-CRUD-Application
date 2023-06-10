@@ -19,5 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('showdata',[ApiController ::class, 'show' ]);
+Route::get('showdata',[ApiController ::class, 'show' ]);
 Route::post('storedata',[ApiController ::class, 'store' ]);
+Route::get('deletedata/{id}',[APiController::class,'delete']);
+Route::post('updatedata/{id}',[APiController::class,'update']);
